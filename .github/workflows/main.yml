@@ -9,8 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-      group: Default
+    runs-on: grup:Default
     timeout-minutes: 355
     steps:
     - uses: actions/checkout@v1
