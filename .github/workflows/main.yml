@@ -9,25 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted
-    strategy:
-      matrix:
-        go:
-          - |
-          - |
-          - |
-          - |
-        node:
-          - |
-          - |
-          - |
-          - |
-          - |
-          - |
-          - |
-          - |
-          - |
-          - |
+    runs-on: runner
     timeout-minutes: 355
     steps:
     - uses: actions/checkout@v1
