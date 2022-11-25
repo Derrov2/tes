@@ -9,7 +9,9 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted Linux X64
+    runs-on:
+      group: Default
+      labels: self-hosted Linux X64
     timeout-minutes: 355
     steps:
     - uses: actions/checkout@v1
