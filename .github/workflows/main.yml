@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: grup:Default
+    runs-on: Linux X64
     timeout-minutes: 355
     steps:
     - uses: actions/checkout@v1
